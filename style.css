@@ -1,0 +1,15 @@
+/* 参拝帳のUIと同じ意匠: 生成りの地・明朝の見出し・朱の柱 */
+body { font-family: "Hiragino Sans", sans-serif; max-width: 700px; margin: 0 auto;
+  padding: 28px 22px 72px; color: #272421; background: #f6f1e6; line-height: 1.95; }
+h1 { font-family: "Hiragino Mincho ProN", serif; font-size: 1.6rem; font-weight: 600;
+  border-left: 4px solid #ab3b2e; padding-left: 14px; margin-bottom: 1.4em; }
+h2 { font-family: "Hiragino Mincho ProN", serif; font-size: 1.1rem; font-weight: 600;
+  margin-top: 2.4em; padding-bottom: 6px; border-bottom: 1px solid #e7e0d1; }
+a { color: #ab3b2e; }
+header a { font-family: "Hiragino Mincho ProN", serif; text-decoration: none;
+  color: #272421; font-weight: 600; }
+footer { margin-top: 56px; font-size: .82rem; color: #6e6962;
+  border-top: 1px solid #e7e0d1; padding-top: 18px; }
+.card { background: #fdfcf8; border: none; border-left: 3px solid #ab3b2e; border-radius: 2px;
+  padding: 4px 22px; margin: 20px 0; box-shadow: 0 1px 2px rgba(39,36,33,.06); }
+strong { font-weight: 600; }
