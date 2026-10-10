@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>神社データベース | 参拝帳</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a href="./">参拝帳 - 神社巡りと御朱印の記録地図</a></header>
+<h1>神社データベース</h1>
+<p>「参拝帳」に同梱している神社データベースを、Open Database License（ODbL）1.0 のもとで公開しています。アプリの神社検索・地図・めぐり台帳は、このデータベースを端末内で使っています。</p>
+
+<div class="card">
+<h2>ダウンロード</h2>
+<p><a href="data/shrines.sqlite" download>shrines.sqlite</a>（SQLite・約10MB）</p>
+<p>アプリ v1.0（ビルド2）に同梱しているものと同じファイルです。<br>
+作成日: 2026年10月8日<br>
+SHA-256: <code style="word-break:break-all">851ee6e102c5334378fed9c091eba6028e00c1d021bbdab3060d5b7c2d723e17</code></p>
+</div>
+
+<h2>出典とライセンス</h2>
+<p>このデータベースは、次のオープンデータを突き合わせて作成した派生データベースです。</p>
+<ul>
+<li>Wikidata（<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ja">CC0 1.0</a>）: 16,239件</li>
+<li>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>（<a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>）: 25,932件</li>
+</ul>
+<p>OpenStreetMap のデータを含むため、データベース全体を <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a> で提供します。利用・再配布の際は、「© OpenStreetMap contributors」の表示と ODbL の条件に従ってください。</p>
+
+<h2>収録内容</h2>
+<ul>
+<li><strong>shrines</strong>（42,171件）: 神社の名前・緯度経度・都道府県コード（JIS X 0401）・出典（wikidata / osm）・Wikidata ID・OSM ID・ひらがなの読み</li>
+<li><strong>ichinomiya</strong>（108件）: 各国一の宮と、上記の神社との対応</li>
+<li><strong>nijunisha</strong>（23件）: 二十二社（賀茂は上下二社を別に収録）と、上記の神社との対応</li>
+<li><strong>meta</strong>: 作成日とライセンスの表記</li>
+</ul>
+
+<h2>作り方</h2>
+<p>Wikidata の「神社」（Q845945）とその下位分類に当たる項目と、OpenStreetMap で名前があり religion=shinto が付いた要素を取得し、名前の正規化と位置の近さで同じ神社をまとめています。施設の一部（社務所・鳥居など）や御旅所・跡地は除き、読み仮名が無いものは機械的に補っています。都道府県は位置から判定しています。</p>
+
+<p><a href="./">サポート</a> ／ <a href="terms.html">利用規約</a> ／ <a href="privacy.html">プライバシーポリシー</a></p>
+<footer>© 2026 Yuuki Odan<br>Shrine data: © OpenStreetMap contributors (ODbL 1.0) / Wikidata (CC0 1.0). This database is made available under the Open Database License.</footer>
+</body></html>
